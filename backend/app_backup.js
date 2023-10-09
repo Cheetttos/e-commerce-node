@@ -3,7 +3,7 @@ const MongoClient = require('mongodb').MongoClient
 const app = express()
 app.use(express.json())
 const port = 3000
-const CONN_STRING = "mongodb+srv://tedw_admin:bLeXgbg0xfWsIOpC@tedw.msppaxe.mongodb.net/?retryWrites=true&w=majority"
+
 var db = null
 
 app.get('/', (req, res) => res.send('Hello World!'))
