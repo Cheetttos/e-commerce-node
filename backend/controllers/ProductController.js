@@ -29,7 +29,6 @@ const save = async (req, res) => {
         res.send(savedProduct)
        
     } catch (error) {
-        //console.log(error.errors)
         res.status(400).send(error.errors)
     }
 }
