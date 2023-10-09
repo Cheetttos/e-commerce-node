@@ -20,8 +20,6 @@ const findOne = async (req, res) => {
 const save = async (req, res) => {
     try {
         let objNewProduct = req.body
-        /*let totalProducts = await Product.count({});
-        objNewProduct.id = totalProducts++*/
         const p = await Product.find().sort({"id":-1}).limit(1)
         objNewProduct.id = parseInt(p[0].id) + 1
 
